@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\Bounce.cs" />
     <Compile Include="Assets\Script\ControlListener.cs" />
     <Compile Include="Assets\Script\Controller.cs" />
+    <Compile Include="Assets\Script\SceneScroll.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/fatih/Documents/GitHub/JumperMax/JumperMax/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

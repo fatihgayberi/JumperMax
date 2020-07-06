@@ -23,7 +23,15 @@ public class ControlListener : MonoBehaviour
 
         if (rb2d.name == "Player")
         {
-            player.transform.position = new Vector3(num * player.transform.position.x, player.transform.position.y, player.transform.position.z);
+            if (player.transform.position.x < 0)
+            {
+                player.transform.position = new Vector3(1f * player.transform.position.x + 0.5f, player.transform.position.y, player.transform.position.z);
+            }
+            if (player.transform.position.x > 0)
+            {
+                player.transform.position = new Vector3((-1f) * player.transform.position.x + 0.5f, player.transform.position.y, player.transform.position.z);
+            }
+
         }
 
         
