@@ -5,7 +5,6 @@ using UnityEngine;
 public class ControlListener : MonoBehaviour
 {
     public GameObject player;
-    private float num = -1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,19 +20,21 @@ public class ControlListener : MonoBehaviour
     {
         Rigidbody2D rb2d = collision.collider.GetComponent<Rigidbody2D>();
 
-        if (rb2d.name == "Player")
+        //Debug.Log("name: " + rb2d);
+        //if (rb2d.name == "Player")
         {
-            if (player.transform.position.x < 0)
+            if (player.transform.position.x < 0) //left ending
             {
-                player.transform.position = new Vector3(1f * player.transform.position.x + 0.5f, player.transform.position.y, player.transform.position.z);
+                player.transform.position = new Vector3((-1f) * player.transform.position.x - 0.5f, player.transform.position.y, player.transform.position.z);
+                //Debug.Log("player: " + player.transform.position.x + "\nleft duvar: " + (-1f * player.transform.position.x + 0.5f));
             }
-            if (player.transform.position.x > 0)
+            else if (player.transform.position.x > 0) // right ending
             {
                 player.transform.position = new Vector3((-1f) * player.transform.position.x + 0.5f, player.transform.position.y, player.transform.position.z);
+                //Debug.Log("la right la");
             }
 
         }
 
-        
     }
 }

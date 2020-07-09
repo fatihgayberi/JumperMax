@@ -305,4 +305,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f490b0070f821834384a2060a282703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 6531255157817752086, guid: 35b2a69ebca069a40bcfb85cbbe9e982, type: 3}
   jumpPower: 15

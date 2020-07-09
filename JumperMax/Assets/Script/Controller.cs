@@ -19,17 +19,16 @@ public class Controller : MonoBehaviour
         int i = 0;
 
         while (i < Input.touchCount)
-        {
-            //var touch = Input.GetTouch(0);
+        { 
             if (Input.GetTouch(i).position.x < Screen.width / 2)
             {
                 playerRb.AddForce(new Vector2(-1f * moveSpeed * Time.deltaTime, 0));
-                Debug.Log("Left click");
+                //Debug.Log("Left click");
             }
             if (Input.GetTouch(i).position.x > Screen.width / 2)
             {
                 playerRb.AddForce(new Vector2(1f * moveSpeed * Time.deltaTime, 0));
-                Debug.Log("Right click");
+                //Debug.Log("Right click");
             }
             ++i;
         }
