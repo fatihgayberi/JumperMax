@@ -63,10 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DestroyLine.cs" />
     <Compile Include="Assets\Script\Bounce.cs" />
     <Compile Include="Assets\Script\ControlListener.cs" />
     <Compile Include="Assets\Script\Controller.cs" />
+    <Compile Include="Assets\Script\DestroyLine.cs" />
+    <Compile Include="Assets\Script\ExtraBounce.cs" />
     <Compile Include="Assets\Script\SceneScroll.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">

@@ -1,14 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.ExceptionServices;
 using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    public GameObject player;
-    //public GameObject scene;
-    public float normalJumpPower = 15f, extraJumpPower = 20f;
-    public float firstHigh, endHigh;
+    public float normalJumpPower = 15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,28 +22,9 @@ public class Bounce : MonoBehaviour
 
         if (rb2d != null)
         {
-            if (rb2d.gameObject.name.StartsWith("Normal"))
-            {
-                Debug.Log("Line 29");
-                Vector2 velocity = rb2d.velocity;
-                velocity.y = normalJumpPower;
-                rb2d.velocity = velocity;
-                //endHigh = player.transform.position.y;
-
-                //Debug.Log("firstHigh: " + firstHigh + "  endHigh: " + endHigh);
-            }
-            else
-            {
-                Debug.Log("olmuyo");
-            }
-            /*else if (collision.gameObject.name.StartsWith("JumpPlatform"))
-            {
-                Vector2 velocity = rb2d.velocity;
-                velocity.y = extraJumpPower;
-                rb2d.velocity = velocity;
-                endHigh = player.transform.position.y;
-            }*/
+            Vector2 velocity = rb2d.velocity;
+            velocity.y = normalJumpPower;
+            rb2d.velocity = velocity;        
         }
-
     }
 }

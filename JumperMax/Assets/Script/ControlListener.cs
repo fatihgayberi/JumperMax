@@ -20,18 +20,14 @@ public class ControlListener : MonoBehaviour
     {
         Rigidbody2D rb2d = collision.collider.GetComponent<Rigidbody2D>();
 
-        //Debug.Log("name: " + rb2d);
-        //if (rb2d.name == "Player")
         {
             if (player.transform.position.x < 0) //left ending
             {
                 player.transform.position = new Vector3((-1f) * player.transform.position.x - 0.5f, player.transform.position.y, player.transform.position.z);
-                //Debug.Log("player: " + player.transform.position.x + "\nleft duvar: " + (-1f * player.transform.position.x + 0.5f));
             }
             else if (player.transform.position.x > 0) // right ending
             {
                 player.transform.position = new Vector3((-1f) * player.transform.position.x + 0.5f, player.transform.position.y, player.transform.position.z);
-                //Debug.Log("la right la");
             }
 
         }

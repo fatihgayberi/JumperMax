@@ -93,10 +93,10 @@ GameObject:
   - component: {fileID: 8582542944017026220}
   - component: {fileID: 8582542944017026209}
   - component: {fileID: 8582542944017026210}
-  - component: {fileID: 8582542944017026208}
+  - component: {fileID: -9164147146404863880}
   m_Layer: 0
   m_Name: JumpPlatform
-  m_TagString: Untagged
+  m_TagString: JumpPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,23 +212,19 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!114 &8582542944017026208
+--- !u!114 &-9164147146404863880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582542944017026223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f490b0070f821834384a2060a282703f, type: 3}
+  m_Script: {fileID: 11500000, guid: bab5aab7e889b4042b97c3fce46171ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6531255157817752086, guid: 35b2a69ebca069a40bcfb85cbbe9e982, type: 3}
-  NormaljumpPower: 15
-  ExtraJumpPower: 0
-  firstHigh: 0
-  endHigh: 0
+  extraJumpPower: 20
 --- !u!1 &8582542944551362531
 GameObject:
   m_ObjectHideFlags: 0
